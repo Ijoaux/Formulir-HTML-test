@@ -1,0 +1,61 @@
+html {
+    cursor: url("hand.png"), auto !important;
+  }
+  
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    :root{
+        --color1:#076c53;
+        --color2:#b8dbd3ab;
+        --textColor1:#076c53;   
+    }
+
+    input:checked~*{
+        --color1:lightyellow;
+        --color2:darkred;
+        --textColor1:khaki;
+    }
+body{
+    margin: 0;
+    padding: 5% 10%;
+    font: 16px 'Montserrat', sant-serif;
+    color: var(--textcolor2);
+    background-color: var(--color2);
+}
+.wr{
+    font-family: "Paytone One", sans-serif;
+    padding: 5%;
+    display: flex;
+   font-weight: 300;
+    flex-direction: column;
+    border: 5px solid var(--color1);
+    border-radius: 5px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.user-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grid-man {
+    display:grid;
+    grid-template-rows: 200px ;
+    background: var(--color1);
+    color:aliceblue;
+    font-family: "Paytone One", sans-serif
+}
+
+@media only screen and (orientation: portrait) {
+   body
+    \t.card{ width:30%; }
+    }
